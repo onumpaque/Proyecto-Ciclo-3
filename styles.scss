@@ -52,19 +52,21 @@ a:hover {
      border-bottom: 1px #444 solid;
 }
 
-
 .menu {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
 }
+
 .toggle {
      order: 1;
 }
+
 .item.button {
      order: 2;
 }
+
 .item {
      width: 100%;
      text-align: center;
@@ -81,47 +83,57 @@ footer{
      bottom: 0;
      left: 0;
      background: #46237a;
-   }
-   footer .content{
+}
+
+footer .content{
      max-width: 1350px;
      margin: auto;
      padding: 20px;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-   }
-   footer .content p,a{
+}
+
+footer .content p,a{
      color: #fff;
-   }
-   footer .content .box{
+}
+
+footer .content .box{
      width: 49%;
      transition: all 0.4s ease;
-   }
-   footer .content .topic{
+}
+
+footer .content .topic{
      font-size: 22px;
      font-weight: 600;
      color: #fff;
      margin-bottom: 16px;
-   }
-   footer .content p{
+}
+
+footer .content p{
      text-align: justify;
      padding-right: 80px;
-   }
-   footer .content .lower .topic{
+}
+
+footer .content .lower .topic{
      margin: 24px 0 5px 0;
-   }
-   footer .content .lower i{
+}
+
+footer .content .lower i{
      padding-right: 16px;
-   }
-   footer .content .middle{
+}
+
+footer .content .middle{
      padding-left: 80px;
      justify-content: center;
      text-align: center;
-   }
-   footer .content .middle a{
+}
+
+footer .content .middle a{
      line-height: 32px;
-   }
-   footer .content .media-icons a{
+}
+
+footer .content .media-icons a{
      font-size: 16px;
      height: 45px;
      width: 45px;
@@ -132,103 +144,160 @@ footer{
      border: 2px solid #ffff;
      margin: 30px 5px 0 0;
      transition: all 0.3s ease;
-   }
-   footer .content .media-icons p{
+}
+
+footer .content .media-icons p{
      justify-content: center;
      text-align: center;
      margin: 30px 5px 0 0;
      padding-left: 80px ;
-   }
-   .content .media-icons a:hover{
-     border-color: #ffc304;
-   }
+}
 
-   footer a{
+.content .media-icons a:hover{
+     border-color: #ffc304;
+}
+
+footer a{
      transition: all 0.3s ease;
-   }
-   footer a:hover{
+}
+
+footer a:hover{
      color: #ffc304;
-   }
+}
 
 @media all and (min-width: 600px) {
      .menu {
           justify-content: center;
      }
+
      .logo {
           flex: 1;
      }
+     
      .toggle {
           flex: 1;
           text-align: right;
      }
+
      .item.button {
           width: auto;
           order: 1;
           display: block;
      }
+     
      .toggle {
           order: 2;
      }
+
      .button.secondary {
           border: 0;
      }
+
      .button a {
           padding: 7.5px 15px;
           background: #00297A;
           border: 1px #00297A solid;
      }
+
      .button.secondary a {
           background: transparent;
      }
+
      .button a:hover {
           text-decoration: none;
      }
+
      .button:not(.secondary) a:hover {
           background: #00297A;
           border-color: #00297A;
      }
+
      .button.secondary a:hover {
           color: #000;
      }
-     footer{
-          position: relative;
-        }
-        footer .content .box{
-          width: 100%;
-          margin-top: 30px;
-        }
-        footer .content .middle{
-          padding-left: 0px;
-        }
+
 }
-   /* Desktop menu */
+
+/* Desktop menu */
 @media all and (min-width: 900px) {
      .item {
           display: block;
           width: auto;
      }
+
      .toggle {
           display: none;
      }
+
      .logo {
           order: 0;
      }
+     
      .item {
           order: 1;
      }
+
      .button {
           order: 2;
      }
+
      .menu li {
           padding: 15px 10px;
      }
+
      .menu li.button {
           padding-right: 0;
      }
+}
+
+@media all and (max-width: 900px) {
      footer .content .box{
           width: 50%;
-        }
-        .content .right{
-          margin-top: 40px;
-        }
      }
+
+     footer .content p{
+          padding-right: 0;
+     }
+
+     footer .content .middle{
+          padding-left: 0;
+     }
+
+     footer .content .media-icons p{
+          padding-left: 0 ;
+     }
+
+     .content .right{
+          margin-top: 40px;
+     }
+}
+
+@media all and (max-width: 600px) {
+     footer{
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+     }
+
+     footer .content p{
+          padding-right: 0;
+     }
+
+     footer .content .box{
+          width: 100%;
+          margin-top: 30px;
+     }
+
+     footer .content .middle{
+          padding-left: 0;
+     }
+
+     footer .content .media-icons p{
+          padding-left: 0 ;
+     }
+
+     footer .content .middle{
+          padding-left: 0px;
+     }
+}

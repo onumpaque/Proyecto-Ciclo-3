@@ -241,16 +241,6 @@ footer a:hover {
   .button.secondary a:hover {
     color: #000;
   }
-  footer {
-    position: relative;
-  }
-  footer .content .box {
-    width: 100%;
-    margin-top: 30px;
-  }
-  footer .content .middle {
-    padding-left: 0px;
-  }
 }
 
 /* Desktop menu */
@@ -283,11 +273,52 @@ footer a:hover {
   .menu li.button {
     padding-right: 0;
   }
+}
+
+@media all and (max-width: 900px) {
   footer .content .box {
     width: 50%;
   }
+  footer .content p {
+    padding-right: 0;
+  }
+  footer .content .middle {
+    padding-left: 0;
+  }
+  footer .content .media-icons p {
+    padding-left: 0;
+  }
   .content .right {
     margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  footer {
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  footer .content p {
+    padding-right: 0;
+  }
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle {
+    padding-left: 0;
+  }
+  footer .content .media-icons p {
+    padding-left: 0;
+  }
+  footer .content .middle {
+    padding-left: 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
